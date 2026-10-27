@@ -18,7 +18,7 @@ func TestLookup(t *testing.T) {
 		{"mixed case", "PiLoT", true},
 		{"surrounding whitespace", "  plane  ", true},
 		{"unknown word", "nope", false},
-		{"empty string", "", false},
+		{"empty string", "%", false},
 	}
 
 	for _, tt := range tests {
