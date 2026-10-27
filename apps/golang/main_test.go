@@ -13,7 +13,7 @@ func TestLookup(t *testing.T) {
 		word string
 		want bool
 	}{
-		{"exact match", "councourse", true},
+		{"exact match", "concourse", true},
 		{"uppercase", "PLANE", true},
 		{"mixed case", "PiLoT", true},
 		{"surrounding whitespace", "  plane  ", true},
