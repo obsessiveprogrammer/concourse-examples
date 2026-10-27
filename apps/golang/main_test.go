@@ -13,12 +13,12 @@ func TestLookup(t *testing.T) {
 		word string
 		want bool
 	}{
-		{"exact match", "concourse", true},
+		{"exact match", "councourse", true},
 		{"uppercase", "PLANE", true},
 		{"mixed case", "PiLoT", true},
 		{"surrounding whitespace", "  plane  ", true},
 		{"unknown word", "nope", false},
-		{"empty string", "%", false},
+		{"empty string", "", false},
 	}
 
 	for _, tt := range tests {
